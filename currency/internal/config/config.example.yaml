@@ -1,0 +1,16 @@
+grpc:
+  host: "localhost"
+  port: 6565
+
+db:
+  url: "postgres://user:password@localhost:5432/currency?sslmode=disable"
+
+external_api:
+  url: "https://latest.currency-api.pages.dev/v1/currencies/rub.json"
+
+
+worker:
+  cron: "0 */24 * * *"
+  currencies:
+    base_currency: "RUB"
+    target_currency: "USD"

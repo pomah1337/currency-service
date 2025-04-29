@@ -1,0 +1,1 @@
+drop table currency_exchange_rates;
